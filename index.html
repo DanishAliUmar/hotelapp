@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        /* typography fonts */
+        h1,h2,h3,h4,h5,h6,p,span{
+            font-family: 'Inter', sans-serif;
+        }
+
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-button-next {
+            right: 45%;
+            top: 80%;
+        }
+
+        .swiper-button-prev {
+            left: 45%;
+            top: 80%;
+        }
+
+        .swiper-button-next:after,
+        .swiper-button-prev:after {
+            font-size: 20px;
+            font-family: none;
+        }
+
+        .swiper-button-prev:after {
+            content: '\279C';
+            transform: rotate(180deg);
+        }
+
+        .swiper-button-next:after {
+            content: '\279C';
+        }
+    </style>
+</head>
+
+<body class="overflow-x-hidden">
+    <header class="w-full sm:h-[750px] h-[600px] !bg-no-repeat !bg-cover !bg-bottom"
+        style="background: linear-gradient(rgba(0, 0, 0, 0.342),rgba(0, 0, 0, 0.342)),  url('./imgs/heroimg.png');">
+        <nav class="flex item-center justify-between text-yellow-700 sm:px-20 p-4 gap-1">
+            <div class="logo md:w-48 sm:w-36 w-32">
+                <img src="./imgs/textLogo.png" alt="" class="w-full h-full object-contain">
+            </div>
+            <div class="flex items-center gap-3">
+                <!-- <button class="sm:px-[19px] px-[11px] sm:py-[7px] py-[3px] text-white border border-white rounded-lg sm:rounded-[10px] text-sm sm:text-base font-semibold">Contact
+                    Us</button> -->
+               <a href="#download_app">
+                   <button class="sm:px-5 px-3 sm:py-2 py-1 text-white  rounded-lg sm:rounded-[10px] text-sm sm:text-base bg-gradient-to-r font-semibold from-[#2FC6A1] to-[#23B3D2]">Join Now!</button>
+               </a>
+            </div>
+        </nav>
+        <div class="flex  items-center justify-center flex-col gap-5 text-center h-full lg:px-20 sm:px-10 px-5">
+            <h1 class="text-white text-4xl sm:text-5xl xl:text-6xl font-bold ">
+                <span class="text-[#FFC377]">Explore</span> and Reserve <br class="hidden sm:block"> Exceptional Dining
+            </h1>
+            <p class="sm:text-xl text-white">Discover top-notch restaurants and book your table <br class="hidden sm:block"> for a culinary
+                adventure like no other.</p>
+            <!-- <button
+                class="px-5 py-2 text-white  rounded-[10px] bg-gradient-to-r font-semibold from-[#2FC6A1] to-[#23B3D2]">Explore
+                Now</button> -->
+        </div>
+    </header>
+    <section class="w-full lg:px-20 px-10 py-24 bg-[#E9F2F2] space-y-12">
+        <div class="flex items-center justify-between flex-wrap lg:!flex-nowrap gap-4">
+            <div class="lg:flex-1">
+                <h2 class="text-black text-4xl md:text-5xl xl:text-6xl font-bold pb-5">Join Our Culinary Community</h2>
+                <a href="#download_app">
+                    <button
+                    class="px-5 py-2 text-white  rounded-[10px] bg-gradient-to-r font-semibold from-[#2FC6A1] to-[#23B3D2]">Join
+                    Now!</button>
+                </a>
+            </div>
+            <div class="lg:flex-1">
+                <h5 class="font-bold text-2xl">
+                    Boost Your Restaurant's Success with Us
+                </h5>
+                <p class="">
+                    Are you a restaurant owner looking to expand your reach and increase revenue? Join our platform to
+                    connect with a diverse audience, showcase your menu, and enjoy the benefits of our exclusive
+                    promotions. Unlock new earning opportunities for your business – sign up today!
+                </p>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:gap-3 gap-5">
+
+            <div class="bg-white rounded-2xl p-5">
+                <div class="flex justify-end w-full">
+                    <span class="sm:text-7xl text-5xl font-bold text-[#d1cece]">1</span>
+                </div>
+                <div class="sm:space-y-3 space-y-2">
+                    <img src="./imgs/enlists.svg" class="xl:w-24 sm:w-20 w-16 h-16 sm:h-20 xl:h-24" alt="">
+                    <h3 class="font-bold xl:text-2xl md:text-xl text-lg text-black">Enlist Your Restaurant</h3>
+                    <p class="leading-6">Create your account by providing basic details about your establishment.</p>
+                </div>
+            </div>
+
+
+            <div class="bg-white rounded-2xl p-5">
+                <div class="flex justify-end w-full">
+                    <span class="sm:text-7xl text-5xl font-bold text-[#d1cece]">2</span>
+                </div>
+                <div class="sm:space-y-3 space-y-2">
+                    <img src="./imgs/ProfileSetup.svg" class="xl:w-24 sm:w-20 w-16 h-16 sm:h-20 xl:h-24" alt="">
+                    <h3 class="font-bold xl:text-2xl md:text-xl text-lg text-black">Profile Setup</h3>
+                    <p class="leading-6">Customize your profile by adding menu items, photos, and promotions.</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl p-5">
+                <div class="flex justify-end w-full">
+                    <span class="sm:text-7xl text-5xl font-bold text-[#d1cece]">3</span>
+                </div>
+                <div class="sm:space-y-3 space-y-2">
+                    <img src="./imgs/Verification.svg" class="xl:w-24 sm:w-20 w-16 h-16 sm:h-20 xl:h-24" alt="">
+                    <h3 class="font-bold xl:text-2xl md:text-xl text-lg text-black">Verification</h3>
+                    <p class="leading-6">Verify your information to gain access to our platform's full features.</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl p-5">
+                <div class="flex justify-end w-full">
+                    <span class="sm:text-7xl text-5xl font-bold text-[#d1cece]">4</span>
+                </div>
+                <div class="sm:space-y-3 space-y-2">
+                    <img src="./imgs/Selling.svg" class="xl:w-24 sm:w-20 w-16 h-16 sm:h-20 xl:h-24" alt="">
+                    <h3 class="font-bold xl:text-2xl md:text-xl text-lg text-black">Start Selling</h3>
+                    <p class="leading-6">Once verified, start receiving orders and enjoying the benefits of our
+                        platform.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-full lg:px-20 px-10 pr-5 lg:pr-20  pt-20 flex items-stretch justify-between flex-wrap lg:flex-nowrap md:gap-20 gap-10">
+        <div class="lg:flex-1 overflow-hidden sm:pb-40 pb-24 lg:pb-0">
+            <h2 class="text-4xl lg:text-5xl xl:text-6xl font-bold pb-6 text-black">Become a Concierge, Unlock Rewards</h2>
+            <div class="text-black space-y-6">
+                <h6 class="text-xl font-medium">Manage Your Way to Success</h6>
+                <p class="pb-6">Passionate about the restaurant industry? Join us as a manager and play a pivotal role in
+                    shaping culinary experiences. Earn rewards, manage operations seamlessly, and be a part of a
+                    thriving community. Learn more about the exciting opportunities that await you.</p>
+                    <a href="#download_app" class="">
+                        <button
+                        class="px-5 py-2 text-white  rounded-[10px] bg-gradient-to-r font-semibold from-[#2FC6A1] to-[#23B3D2]">Join
+                        Now!</button>
+                    </a>
+            </div>
+            <div class="relative -z-10">
+                <div class="w-full overflow-hidden flex justify-end absolute -top-12">
+                    <svg class="lg:w-[396px] sm:w-48 w-36 h-40 sm:h-52 lg:h-[410px]" viewBox="0 0 396 410" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M225.406 344.532C221.025 355.278 209.342 369.661 202.04 380.242C196.361 388.177 200.742 384.871 190.682 388.839C191.98 397.436 198.633 405.702 204.312 410C220.538 404.71 250.556 386.194 266.62 377.432C304.427 356.932 367.383 328.496 368.682 286.669C369.98 248.315 337.528 234.262 332.335 222.855C344.829 216.903 366.085 193.593 373.225 183.508C383.61 168.464 394.319 148.625 395.779 125.811C397.564 100.186 388.315 78.0323 375.983 65.3024C363.651 52.5726 346.452 47.1169 321.464 40.1734C323.249 29.4274 331.848 21.8226 336.229 10.9113C331.362 6.11695 319.841 1.15726 312.702 0C306.374 7.77016 295.827 33.2298 290.634 36.7016C285.442 40.1734 248.934 41.6613 240.334 43.1492C152.227 58.1936 73.3682 109.774 28.4221 184.169C-23.3389 269.806 -13.1166 395.286 132.593 369.827C166.019 363.875 195.712 350.153 225.406 344.532ZM247.798 355.444C248.771 355.278 344.992 318.081 342.071 280.387C340.935 265.343 325.52 251.621 313.189 247.653C309.132 261.706 258.831 333.29 247.798 355.444ZM180.784 169.621L176.89 172.597L175.268 173.258C162.611 179.54 151.74 181.524 137.948 197.726C126.359 211.404 117.586 227.314 112.148 244.512C104.522 268.815 108.579 292.456 129.348 287.165C153.2 281.048 204.474 181.194 216.968 159.536C226.055 143.665 265.971 78.0322 269.541 66.625C214.21 62.6572 141.193 103.988 110.85 128.29C39.7803 185.327 -11.4939 307.5 57.7911 340.399C100.628 360.734 193.278 328.165 236.764 313.452C245.039 310.641 245.364 307.335 249.907 299.73C257.858 286.339 279.276 256.085 282.521 246.661C249.258 248.81 217.78 253.936 228.813 207.149C235.304 179.54 256.073 158.048 271.812 147.302C279.625 150.082 286.57 154.932 291.932 161.355C281.386 173.754 253.315 196.073 254.775 220.54C273.922 224.343 304.264 208.637 316.434 200.702C393.021 151.601 387.991 61.3347 302.479 64.9718L200.256 240.71C189.384 260.218 178.026 282.206 163.422 296.919C124.967 335.605 62.6589 310.806 89.5941 231.948C97.0431 210.189 108.87 190.255 124.318 173.423C141.842 154.577 162.449 142.177 180.784 169.621Z"
+                            fill="#F1F1F1" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="lg:flex-1 w-full ">
+            <div class="xl:px-14 lg:px-10 sm:px-8 px-5 w-full sm:py-[70px] py-10 rounded-t-[30px] border-r border-solid border-[#62D3B9] sm:space-y-12 space-y-8"
+                style="box-shadow: -20px -15px 1px #62D3B9;">
+                <div class="flex items-center gap-5">
+                    <img src="./imgs/SignUp.svg" alt="" class="xl:w-24 sm:w-20 w-16 h-16 sm:h-20 xl:h-24" />
+                    <div class="text-black">
+                        <h3 class="font-bold text-lg sm:text-xl xl:text-2xl">Concierge Sign Up</h3>
+                        <p class="text-sm sm:text-base">Fill out the application form with your details and experience.</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-5">
+                    <img src="./imgs/Profile_Setup.svg" alt="" class="xl:w-24 sm:w-20 w-16 h-16 sm:h-20 xl:h-24" />
+                    <div class="text-black">
+                        <h3 class="font-bold text-lg sm:text-xl xl:text-2xl">Profile Setup</h3>
+                        <p class="text-sm sm:text-base">Complete your profile with your skills and preferences.</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-5">
+                    <img src="./imgs/Verifications.svg" alt="" class="xl:w-24 sm:w-20 w-16 h-16 sm:h-20 xl:h-24" />
+                    <div class="text-black">
+                        <h3 class="font-bold text-lg sm:text-xl xl:text-2xl">Verification</h3>
+                        <p class="text-sm sm:text-base">Our team will review your application and get back to you with next steps.</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-5">
+                    <img src="./imgs/StartEarning.svg" alt="" class="xl:w-24 sm:w-20 w-16 h-16 sm:h-20 xl:h-24" />
+                    <div class="text-black">
+                        <h3 class="font-bold text-lg sm:text-xl xl:text-2xl">Start Earning</h3>
+                        <p class="text-sm sm:text-base">Dive into your managerial role, contribute to the community, and unlock rewards.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#E9F2F2] w-full lg:px-20 px-10 py-10  space-y-6 relative">
+        <h2 class="text-4xl sm:text-5xl xl:text-6xl font-bold  text-black text-center">Top Restaurants</h2>
+        <div class="flex items-center justify-between gap-10 ">
+        </div>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="p-3 rounded-md lg:w-[300px] w-full bg-white space-y-5">
+                        <img src="./imgs/Restaurants.png" class="w-full h-[150px] rounded-[10px] object-cover" alt="">
+                        <div class="space-y-2">
+                            <h5 class="text-lg font-medium text-left">Bice Mare Restaurant</h5>
+                            <div class="flex items-center gap-1">
+                                <img src="./imgs/phone.svg" class="w-3 h-3" alt="">
+                                <p class=" text-xs text-[#808080] text-left">+971 4 423 0982</p>
+                            </div>
+                            <div class="flex items-center gap-1">
+                                <img src="./imgs/Location.svg" class="w-3 h-3" alt="">
+                                <p class="text-xs text-[#808080] text-left">Souk Al Bahar Downtown Burj Khalifa Dubai,
+                                    UAE</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="p-3 rounded-md lg:w-[300px] w-full bg-white space-y-5">
+                        <img src="./imgs/Restaurants.png" class="w-full h-[150px] rounded-[10px] object-cover" alt="">
+                        <div class="space-y-2">
+                            <h5 class="text-lg font-medium text-left">Bice Mare Restaurant</h5>
+                            <div class="flex items-center gap-1">
+                                <img src="./imgs/phone.svg" class="w-3 h-3" alt="">
+                                <p class=" text-xs text-[#808080] text-left">+971 4 423 0982</p>
+                            </div>
+                            <div class="flex items-center gap-1">
+                                <img src="./imgs/Location.svg" class="w-3 h-3" alt="">
+                                <p class="text-xs text-[#808080] text-left">Souk Al Bahar Downtown Burj Khalifa Dubai,
+                                    UAE</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="p-3 rounded-md lg:w-[300px] w-full bg-white space-y-5">
+                        <img src="./imgs/Restaurants.png" class="w-full h-[150px] rounded-[10px] object-cover" alt="">
+                        <div class="space-y-2">
+                            <h5 class="text-lg font-medium text-left">Bice Mare Restaurant</h5>
+                            <div class="flex items-center gap-1">
+                                <img src="./imgs/phone.svg" class="w-3 h-3" alt="">
+                                <p class=" text-xs text-[#808080] text-left">+971 4 423 0982</p>
+                            </div>
+                            <div class="flex items-center gap-1">
+                                <img src="./imgs/Location.svg" class="w-3 h-3" alt="">
+                                <p class="text-xs text-[#808080] text-left">Souk Al Bahar Downtown Burj Khalifa Dubai,
+                                    UAE</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="p-3 rounded-md lg:w-[300px] w-full bg-white space-y-5">
+                        <img src="./imgs/Restaurants.png" class="w-full h-[150px] rounded-[10px] object-cover" alt="">
+                        <div class="space-y-2">
+                            <h5 class="text-lg font-medium text-left">Bice Mare Restaurant</h5>
+                            <div class="flex items-center gap-1">
+                                <img src="./imgs/phone.svg" class="w-3 h-3" alt="">
+                                <p class=" text-xs text-[#808080] text-left">+971 4 423 0982</p>
+                            </div>
+                            <div class="flex items-center gap-1">
+                                <img src="./imgs/Location.svg" class="w-3 h-3" alt="">
+                                <p class="text-xs text-[#808080] text-left">Souk Al Bahar Downtown Burj Khalifa Dubai,
+                                    UAE</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="p-3 rounded-md lg:w-[300px] w-full bg-white space-y-5">
+                        <img src="./imgs/Restaurants.png" class="w-full h-[150px] rounded-[10px] object-cover" alt="">
+                        <div class="space-y-2">
+                            <h5 class="text-lg font-medium text-left">Bice Mare Restaurant</h5>
+                            <div class="flex items-center gap-1">
+                                <img src="./imgs/phone.svg" class="w-3 h-3" alt="">
+                                <p class=" text-xs text-[#808080] text-left">+971 4 423 0982</p>
+                            </div>
+                            <div class="flex items-center gap-1">
+                                <img src="./imgs/Location.svg" class="w-3 h-3" alt="">
+                                <p class="text-xs text-[#808080] text-left">Souk Al Bahar Downtown Burj Khalifa Dubai,
+                                    UAE</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="p-3 rounded-md lg:w-[300px] w-full bg-white space-y-5">
+                        <img src="./imgs/Restaurants.png" class="w-full h-[150px] rounded-[10px] object-cover" alt="">
+                        <div class="space-y-2">
+                            <h5 class="text-lg font-medium text-left">Bice Mare Restaurant</h5>
+                            <div class="flex items-center gap-1">
+                                <img src="./imgs/phone.svg" class="w-3 h-3" alt="">
+                                <p class=" text-xs text-[#808080] text-left">+971 4 423 0982</p>
+                            </div>
+                            <div class="flex items-center gap-1">
+                                <img src="./imgs/Location.svg" class="w-3 h-3" alt="">
+                                <p class="text-xs text-[#808080] text-left">Souk Al Bahar Downtown Burj Khalifa Dubai,
+                                    UAE</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="p-3 rounded-md lg:w-[300px] w-full bg-white space-y-5">
+                        <img src="./imgs/Restaurants.png" class="w-full h-[150px] rounded-[10px] object-cover" alt="">
+                        <div class="space-y-2">
+                            <h5 class="text-lg font-medium text-left">Bice Mare Restaurant</h5>
+                            <div class="flex items-center gap-1">
+                                <img src="./imgs/phone.svg" class="w-3 h-3" alt="">
+                                <p class=" text-xs text-[#808080] text-left">+971 4 423 0982</p>
+                            </div>
+                            <div class="flex items-center gap-1">
+                                <img src="./imgs/Location.svg" class="w-3 h-3" alt="">
+                                <p class="text-xs text-[#808080] text-left">Souk Al Bahar Downtown Burj Khalifa Dubai,
+                                    UAE</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center gap-5 pt-10">
+            <button  type="button" class="swiper-button-prev px-7 py-4 !static !rounded-[10px] !flex items-center justify-center text-[#1D8D70] cursor-pointer group focus:outline-none border-[#1D8D70] border-solid border">
+             
+            </button>
+            <button type="button" class="swiper-button-next px-7 py-4 text-[#1D8D70] rounded-[10px] !static !flex items-center justify-center cursor-pointer group focus:outline-none border-[#1D8D70] border-solid border">
+               
+            </button>
+       </div>
+    </section>
+
+    <section
+        class="overflow-x-hidden lg:p-20 p-10 flex  lg:items-center lg:justify-between flex-wrap lg:flex-nowrap gap-10 bg-gradient-to-r from-[#2FC6A1] to-[#23B3D2]">
+        <div class="lg:flex-1 space-y-2 text-white ">
+            <p class="font-medium sm:text-xl text-lg">Our Story</p>
+            <h2 class="text-4xl sm:text-5xl xl:text-6xl font-bold xl:leading-[72px] sm:pb-4 pb-2">
+                Connecting People Through Food
+            </h2>
+            <p class="sm:text-base text-sm">we believe in the power of food to bring people together. Our platform is
+                designed to create memorable dining experiences, whether you're a restaurant owner, manager, or a food
+                enthusiast. Discover the story behind our mission and join us in revolutionizing the way we dine.</p>
+        </div>
+        <div class="lg:flex-1 w-full lg:h-full ">
+            <!-- <div class=" relative lg:w-full sm:w-3/5 w-full m-auto h-full lg:top-10 sm:-top-[80%] -top-full">
+                <img src="./imgs/storyImg3.png"
+                    class="absolute sm:left-16 top-12 z-10 w-96 h-96 scale-[0.65] sm:scale-75 xl:scale-100 object-contain" alt="">
+                <img src="./imgs/storyImg.png"
+                    class="absolute top-4 sm:left-0 -left-10 z-10 w-96 h-96 scale-[0.65] sm:scale-75 xl:scale-100 object-contain"
+                    alt="">
+                <img src="./imgs/storyImg2.png"
+                    class="absolute sm:left-40 left-28 lg:left-1/2 -top-14 w-80 h-80 scale-[0.65] sm:scale-75 xl:scale-100 object-contain"
+                    alt="">
+            </div> -->
+            <div class="flex lg:justify-end justify-center w-full">
+                <img src="./imgs/GroupImgs" class="sm:w-[400px] w-[300px] h-[300px] sm:h-[400px] object-contain" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <section id="download_app" class="flex items-center justify-center flex-wrap-reverse lg:flex-nowrap bg-white xl:px-40 lg:px-32 md:px-20 sm:px-10 px-5 md:py-20 py-10 xl:gap-24 gap-10">
+            <img src="./imgs/mobileImg.png" class="sm:w-[330px] md:w-[280px] w-[230px]" alt="">
+        <div class="md:space-y-10 space-y-5">
+            <h2 class="text-[#1E1E1E] text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold ">Download Our App for a Flavorsome Journey</h2>
+            <p class="text-[#1E1E1E]">Experience the convenience of our mobile app on both Android and iOS platforms. Whether you're a food lover seeking culinary adventures or a restaurant professional looking to elevate your business, our app is your gateway to a world of possibilities. Download now and savor the flavor of innovation.</p>
+            <div class="flex items-center sm:gap-4 gap-2">
+                <img src="./imgs/App Store.png" class="lg:w-44 sm:w-36 w-32  " alt="">
+                <img src="./imgs/Type6.png" class="lg:w-44 sm:w-36 w-32  " alt="">
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#262424] xl:px-20 sm:px-10 px-5 py-10 flex items-center justify-between flex-wrap gap-3 lg:gap-0">
+        <div class="lg:flex-1 w-full ">
+            <img src="./imgs/logoIcon.png" class="m-auto lg:m-0" alt="">
+        </div>
+        <div class="flex items-center gap-3 text-white lg:flex-1 text-sm sm:text-base w-full justify-center">
+            <a href="./privacy.html">
+                <button>Privacy & Policy</button>
+            </a>
+            <span>|</span>
+            <a href="./privacy.html">
+                <button>Terms & Conditions</button>
+            </a>
+        </div>
+        <span class="text-white lg:flex-1 w-full text-center text-sm sm:text-base lg:text-right text-nowrap">© 2024 Concierge Booking All rights reserved.</span>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".swiper", {
+            slidesPerView: 4,
+            spaceBetween: 20,
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                1240: {
+                    slidesPerView: 4,
+                },
+                992: {
+                    slidesPerView: 3,
+                },
+                600: {
+                    slidesPerView: 2,
+                },
+                300: {
+                    slidesPerView: 1,
+                },
+            },
+        });
+
+    </script>
+</body>
+
+</html>
