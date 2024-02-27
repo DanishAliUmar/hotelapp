@@ -158,11 +158,15 @@
     </header>
 
     <section class="xl:px-48 lg:px-32 sm:px-16 px-10 sm:py-14 py-10">
-        <div class="flex items-center justify-end w-full sm:pb-8 pb-6 border-[#D1D1D1] border-b border-solid">
+        <div class="flex items-center justify-end gap-3 w-full sm:pb-8 pb-6 border-[#D1D1D1] border-b border-solid">
             <button
                 class="flex items-center sm:gap-[10px] gap-1 sm:py-4 py-2 sm:px-6 px-3 sm:rounded-[10px] rounded-lg text-[#1D8D70] border-[1.5px] border-solid border-[#1D8D70]">
-                <span class=""><img src="./imgs/tick.svg" class="sm:scale-100 scale-75" alt=""></span><span class="sm:text-base text-sm">Confirmed</span>
+                <span class=""><img src="./imgs/tick.svg" class="sm:scale-100 scale-75" alt=""></span><span
+                    class="sm:text-base text-sm">Confirmed</span>
             </button>
+            <button id="open_rating_popup"
+                class="sm:px-10 px-5 sm:py-4 py-2 text-white  rounded-lg sm:rounded-[10px] text-sm sm:text-base bg-gradient-to-r font-semibold from-[#2FC6A1] to-[#23B3D2]">Give
+                Review</button>
         </div>
         <div class="w-full py-6 space-y-14">
             <div class="space-y-3">
@@ -199,7 +203,8 @@
         </div>
         <div class="w-full space-y-5">
             <h2 class="md:text-3xl text-2xl font-semibold">Additional Information</h2>
-            <div class="flex items-center md:justify-start justify-between flex-wrap md:gap-24 gap-10 px-6 py-8 bg-[#E7F8F4] rounded-[10px]">
+            <div
+                class="flex items-center md:justify-start justify-between flex-wrap md:gap-24 gap-10 px-6 py-8 bg-[#E7F8F4] rounded-[10px]">
                 <div class="space-y-1">
                     <p class="text-sm text-[#595959]">Celebrating any occasion</p>
                     <h5 class="font-semibold">Birthday</h5>
@@ -219,7 +224,8 @@
                 <div
                     class="menu__heading__container flex items-center justify-between pb-7 border-b border-[#DFDFDF] border-solid">
                     <h3 class="">Insalate & Antipasti</h3>
-                    <button class="" onclick="toggleAccordion(this)"><img class="min-w-7 min-h-7 " src="./imgs/accordinIcon.svg" alt=""></button>
+                    <button class="" onclick="toggleAccordion(this)"><img class="min-w-7 min-h-7 "
+                            src="./imgs/accordinIcon.svg" alt=""></button>
                 </div>
                 <div class="menu__detail__container hidden lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 py-7">
                     <div class="px-5 py-6 space-y-3 shadow-lg">
@@ -252,7 +258,8 @@
                 <div
                     class="menu__heading__container flex items-center justify-between pb-7 border-b border-[#DFDFDF] border-solid">
                     <h3 class="">Pasta & Risotto</h3>
-                    <button onclick="toggleAccordion(this)"><img class="min-w-7 min-h-7 " src="./imgs/accordinIcon.svg" alt=""></button>
+                    <button onclick="toggleAccordion(this)"><img class="min-w-7 min-h-7 " src="./imgs/accordinIcon.svg"
+                            alt=""></button>
                 </div>
                 <div class="menu__detail__container hidden lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 py-7">
                     <div class="px-5 py-6 space-y-3 shadow-lg">
@@ -285,7 +292,8 @@
                 <div
                     class="menu__heading__container flex items-center justify-between pb-7 border-b border-[#DFDFDF] border-solid">
                     <h3 class="">Secondi Di Pesce - Second Course Fish</h3>
-                    <button onclick="toggleAccordion(this)"><img class="min-w-7 min-h-7 " src="./imgs/accordinIcon.svg" alt=""></button>
+                    <button onclick="toggleAccordion(this)"><img class="min-w-7 min-h-7 " src="./imgs/accordinIcon.svg"
+                            alt=""></button>
                 </div>
                 <div class="menu__detail__container hidden lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 py-7">
                     <div class="px-5 py-6 space-y-3 shadow-lg">
@@ -318,7 +326,8 @@
                 <div
                     class="menu__heading__container flex items-center justify-between pb-7 border-b border-[#DFDFDF] border-solid">
                     <h3 class="">Secondi Di Carne - Second Course Meat</h3>
-                    <button onclick="toggleAccordion(this)"><img class="min-w-7 min-h-7 " src="./imgs/accordinIcon.svg" alt=""></button>
+                    <button onclick="toggleAccordion(this)"><img class="min-w-7 min-h-7 " src="./imgs/accordinIcon.svg"
+                            alt=""></button>
                 </div>
                 <div class="menu__detail__container hidden lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 py-7">
                     <div class="px-5 py-6 space-y-3 shadow-lg">
@@ -351,7 +360,8 @@
                 <div
                     class="menu__heading__container flex items-center justify-between pb-7 border-b border-[#DFDFDF] border-solid">
                     <h3 class="">Contorni - Side Dishes</h3>
-                    <button onclick="toggleAccordion(this)"><img class="min-w-7 min-h-7 " src="./imgs/accordinIcon.svg" alt=""></button>
+                    <button onclick="toggleAccordion(this)"><img class="min-w-7 min-h-7 " src="./imgs/accordinIcon.svg"
+                            alt=""></button>
                 </div>
                 <div class="menu__detail__container hidden lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 py-7">
                     <div class="px-5 py-6 space-y-3 shadow-lg">
@@ -388,7 +398,125 @@
             </a>
         </div>
     </section>
+    <div id="rating_popup"
+        class="fixed inset-0 flex items-center z-[999] justify-center bg-gray-500 bg-opacity-50 hidden">
+        <div
+            class="bg-white py-3 rounded-3xl shadow-lg w-1/2 sm:min-w-[500px] min-w-[350px] max-h-[80vh] overflow-y-auto">
+            <div class="flex items-center px-6 justify-between p-5 border-b border-[#C5C5C5] border-solid ">
+                <h2 class="font-semibold md:text-4xl sm:text-3xl text-2xl">
+                    Leave a review
+                </h2>
+                <button id="close_rating_popup"
+                    class="flex items-center justify-center p-2 rounded-full bg-[#E8E8E8]"><svg
+                        xmlns="http://www.w3.org/2000/svg" class="sm:w-6 w-4 h-4 sm:h-6" viewBox="0 0 384 512">
+                        <path
+                            d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="py-3 px-6 space-y-5">
+                <div id="food_rating" class="rating_box space-y-3">
+                    <h4 class="sm:text-xl text-nowrap font-semibold">
+                        Food
+                    </h4>
+                    <div class="flex items-center gap-3 flex-wrap">
+                        <button class="bg-[#E7F8F4] sm:py-[10px] py-2 px-3 sm:px-[20px] rating-btn rounded-lg text-lg"
+                            data-value="poor">Poor</button>
+                        <button class="bg-[#E7F8F4] sm:py-[10px] py-2 px-3 sm:px-[20px] rating-btn rounded-lg text-lg"
+                            data-value="below average">Below Average</button>
+                        <button class="bg-[#E7F8F4] sm:py-[10px] py-2 px-3 sm:px-[20px] rating-btn rounded-lg text-lg"
+                            data-value="average">Average</button>
+                        <button class="bg-[#E7F8F4] sm:py-[10px] py-2 px-3 sm:px-[20px] rating-btn rounded-lg text-lg"
+                            data-value="good">Good</button>
+                        <button class="bg-[#E7F8F4] sm:py-[10px] py-2 px-3 sm:px-[20px] rating-btn rounded-lg text-lg"
+                            data-value="very good">Very Good</button>
+                    </div>
+                </div>
+                <div id="ambiance_rating" class="rating_box space-y-3">
+                    <h4 class="sm:text-xl text-nowrap font-semibold">
+                        Ambiance
+                    </h4>
+                    <div class="flex items-center gap-3 flex-wrap">
+                        <button class="bg-[#E7F8F4] sm:py-[10px] py-2 px-3 sm:px-[20px] rating-btn rounded-lg text-lg"
+                            data-value="poor">Poor</button>
+                        <button class="bg-[#E7F8F4] sm:py-[10px] py-2 px-3 sm:px-[20px] rating-btn rounded-lg text-lg"
+                            data-value="below average">Below Average</button>
+                        <button class="bg-[#E7F8F4] sm:py-[10px] py-2 px-3 sm:px-[20px] rating-btn rounded-lg text-lg"
+                            data-value="average">Average</button>
+                        <button class="bg-[#E7F8F4] sm:py-[10px] py-2 px-3 sm:px-[20px] rating-btn rounded-lg text-lg"
+                            data-value="good">Good</button>
+                        <button class="bg-[#E7F8F4] sm:py-[10px] py-2 px-3 sm:px-[20px] rating-btn rounded-lg text-lg"
+                            data-value="very good">Very Good</button>
+                    </div>
+                </div>
+                <div id="service_rating" class="rating_box space-y-3">
+                    <h4 class="sm:text-xl text-nowrap font-semibold">
+                        Service
+                    </h4>
+                    <div class="flex items-center gap-3 flex-wrap">
+                        <button class="bg-[#E7F8F4] sm:py-[10px] py-2 px-3 sm:px-[20px] rating-btn rounded-lg text-lg"
+                            data-value="poor">Poor</button>
+                        <button class="bg-[#E7F8F4] sm:py-[10px] py-2 px-3 sm:px-[20px] rating-btn rounded-lg text-lg"
+                            data-value="below average">Below Average</button>
+                        <button class="bg-[#E7F8F4] sm:py-[10px] py-2 px-3 sm:px-[20px] rating-btn rounded-lg text-lg"
+                            data-value="average">Average</button>
+                        <button class="bg-[#E7F8F4] sm:py-[10px] py-2 px-3 sm:px-[20px] rating-btn rounded-lg text-lg"
+                            data-value="good">Good</button>
+                        <button class="bg-[#E7F8F4] sm:py-[10px] py-2 px-3 sm:px-[20px] rating-btn rounded-lg text-lg"
+                            data-value="very good">Very Good</button>
+                    </div>
+                </div>
+                <div id="quality_rating" class="rating_box space-y-3">
+                    <h4 class="sm:text-xl text-nowrap font-semibold">
+                        Quality
+                    </h4>
+                    <div class="flex items-center gap-3 flex-wrap">
+                        <button class="bg-[#E7F8F4] sm:py-[10px] py-2 px-3 sm:px-[20px] rating-btn rounded-lg text-lg"
+                            data-value="poor">Poor</button>
+                        <button class="bg-[#E7F8F4] sm:py-[10px] py-2 px-3 sm:px-[20px] rating-btn rounded-lg text-lg"
+                            data-value="below average">Below Average</button>
+                        <button class="bg-[#E7F8F4] sm:py-[10px] py-2 px-3 sm:px-[20px] rating-btn rounded-lg text-lg"
+                            data-value="average">Average</button>
+                        <button class="bg-[#E7F8F4] sm:py-[10px] py-2 px-3 sm:px-[20px] rating-btn rounded-lg text-lg"
+                            data-value="good">Good</button>
+                        <button class="bg-[#E7F8F4] sm:py-[10px] py-2 px-3 sm:px-[20px] rating-btn rounded-lg text-lg"
+                            data-value="very good">Very Good</button>
+                    </div>
+                </div>
+                <div id="value_money_rating" class="rating_box space-y-3">
+                    <h4 class="sm:text-xl text-nowrap font-semibold">
+                        Value for money
+                    </h4>
+                    <div class="flex items-center gap-3 flex-wrap">
+                        <button class="bg-[#E7F8F4] sm:py-[10px] py-2 px-3 sm:px-[20px] rating-btn rounded-lg text-lg"
+                            data-value="very expensive">Very Expensive</button>
+                        <button class="bg-[#E7F8F4] sm:py-[10px] py-2 px-3 sm:px-[20px] rating-btn rounded-lg text-lg"
+                            data-value="somewhat expensive">Somewhat Expensive</button>
+                        <button class="bg-[#E7F8F4] sm:py-[10px] py-2 px-3 sm:px-[20px] rating-btn rounded-lg text-lg"
+                            data-value="fair">Fair</button>
+                        <button class="bg-[#E7F8F4] sm:py-[10px] py-2 px-3 sm:px-[20px] rating-btn rounded-lg text-lg"
+                            data-value="reasonable">Reasonably Priceed</button>
+                        <button class="bg-[#E7F8F4] sm:py-[10px] py-2 px-3 sm:px-[20px] rating-btn rounded-lg text-lg"
+                            data-value="excellent value">Excellent Value</button>
+                    </div>
+                </div>
+            </div>
 
+            <div class="py-3 px-6  space-y-4">
+                <h3 class="sm:text-xl text-nowrap font-semibold">
+                    Tell us Aabout your experience
+                </h3>
+                <textarea name="" id="" placeholder="Leave a review of your experience"
+                    class="w-full rounded-[10px] min-h-[200px] resize-none outline-none focus:outline-none p-3 bg-[#F3F6F6] border border-[#D3DCDC] border-solid"></textarea>
+            </div>
+
+            <div class="flex py-3 px-6">
+                <button
+                    class="sm:px-5 px-3 py-6 text-white w-full rounded-lg sm:rounded-[10px] text-sm sm:text-base bg-gradient-to-r font-semibold from-[#2FC6A1] to-[#23B3D2]">Submit
+                    your review</button>
+            </div>
+        </div>
+    </div>
     <!-- <footer
         class="bg-[#262424] xl:px-20 sm:px-10 px-5 py-10 flex items-center justify-between flex-wrap gap-3 lg:gap-0">
         <div class="lg:flex-1 w-full ">
@@ -447,6 +575,64 @@
             // Toggle the 'grid' class on the grid div within the parent div
             gridDiv.classList.toggle('grid');
         }
+
+
+        
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const openPopupBtn = document.getElementById("open_rating_popup");
+            const closePopupBtn = document.getElementById("close_rating_popup");
+            const popup = document.getElementById("rating_popup");
+
+            openPopupBtn.addEventListener("click", function () {
+                popup.classList.remove("hidden");
+            });
+
+            closePopupBtn.addEventListener("click", function () {
+                popup.classList.add("hidden");
+            });
+        });
+
+
+
+
+
+
+
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const sections = document.querySelectorAll(".rating_box");
+            const ratings = {};
+
+            sections.forEach(section => {
+                const sectionId = section.id;
+                ratings[sectionId] = null; // Initialize section rating to null
+
+                const ratingButtons = section.querySelectorAll(".rating-btn");
+
+                ratingButtons.forEach(button => {
+                    button.addEventListener("click", function () {
+                        // Reset all buttons in this section to default state
+                        ratingButtons.forEach(btn => {
+                            btn.classList.remove("bg-[#1D8D70]", "text-white");
+                            btn.classList.add("bg-[#E7F8F4]");
+                        });
+
+                        // Set the clicked button to selected state
+                        this.classList.remove("bg-[#E7F8F4]");
+                        this.classList.add("bg-[#1D8D70]", "text-white");
+
+                        // Get the value of the selected button
+                        const selectedValue = this.getAttribute("data-value");
+                        ratings[sectionId] = selectedValue;
+                        console.log("Ratings:", ratings);
+                    });
+                });
+            });
+        });
+
     </script>
 </body>
 
